@@ -2,23 +2,22 @@ var fs = require('fs');
 var stylus = require('stylus');
 var glob = require("glob")
 
-// options is optional 
 glob("blocks/**/*.styl", function (er, files) {
-	// Для каждого файла.
+	// For each file.
 	files.forEach(function (file) {
-		// Читаем содержимое
+		// Read content
 		fs.readFile(file, function (err, data) {
 			var content = data.toString()
 
-			// Компилируем содержимое в css.
+			// Render in css.
 			stylus.render(content, {}, function(err, css){
 				if (err) throw err;
 
-				// Ложим css в файл
+				// Put the css code into file.
 				fs.writeFile(file, css, function () {
 					console.log(' File ' + file + ' was rewrited');
 				});
-				// Переминовываем файл.
+				// Rename file.
 				fs.rename(file, file.replace('.styl', '.css'), function () {
 					console.log(' File ' + file + ' was changed extension');
 				});
