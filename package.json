@@ -1,0 +1,29 @@
+{
+  "name": "styl-to-css-convector",
+  "version": "1.0.0",
+  "description": "The app that convert .styl files into native .css.",
+  "main": "styl-to-css-convector.js",
+  "dependencies": {
+    "glob": "^6.0.4",
+    "stylus": "^0.53.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/campykid/styl-to-css-convector.git"
+  },
+  "keywords": [
+    "styl",
+    "css",
+    "converter"
+  ],
+  "author": "Vladislav Khvostov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/campykid/styl-to-css-convector/issues"
+  },
+  "homepage": "https://github.com/campykid/styl-to-css-convector"
+}
