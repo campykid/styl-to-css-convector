@@ -2,7 +2,6 @@ var fs = require('fs');
 var stylus = require('stylus');
 var glob = require("glob")
 
-// options is optional 
 glob("blocks/**/*.styl", function (er, files) {
 	// For each file.
 	files.forEach(function (file) {
