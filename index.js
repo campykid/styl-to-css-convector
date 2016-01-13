@@ -11,7 +11,7 @@ glob("blocks/**/*.styl", function (er, files) {
 			var content = data.toString()
 
 			// Компилируем содержимое в css.
-			stylus.render(content, {}, function(err, css){
+			stylus(content).import('./vars.styl').render(function(err, css){
 				if (err) throw err;
 
 				// Ложим css в файл

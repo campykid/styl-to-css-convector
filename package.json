@@ -1,13 +1,16 @@
 {
   "name": "styl-to-css-convector",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The app that convert .styl files into native .css.",
-  "main": "styl-to-css-convector.js",
+  "main": "index.js",
   "dependencies": {
     "glob": "^6.0.4",
     "stylus": "^0.53.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "glob": "^6.0.4",
+    "stylus": "^0.53.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
