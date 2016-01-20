@@ -1,6 +1,6 @@
 # stylus auto-convertation to css
 
-This auto-converter that compiles stylus file in native css and changing their extension.
+Thе auto-converter that compiles stylus file in native css and changing their extension.
 
 It can be useful if you decided to switch a new preprocessor like post.css.
 
